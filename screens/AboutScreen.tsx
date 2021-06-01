@@ -4,12 +4,16 @@ import { StyleSheet } from 'react-native';
 import EditScreenInfo from '../components/EditScreenInfo';
 import { Text, View } from '../components/Themed';
 
-export default function TabTwoScreen() {
+export default function AboutScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Tab Two</Text>
+      <Text style={styles.title}>Technologies Used: Front End</Text>
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
-      <EditScreenInfo path="/screens/TabTwoScreen.tsx" />
+      <Text style={{color:'lightgrey'}}>React Native, Expo, TypeScript, React Navigation</Text>
+      <View style={{height: 50}} />
+      <Text style={styles.title}>Technologies Used: Back End</Text>
+      <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
+      <Text style={{color:'lightgrey'}}>AWS Amplify, AWS AppSync, GraphQl</Text>
     </View>
   );
 }

@@ -9,14 +9,42 @@ export type RootStackParamList = {
 };
 
 export type BottomTabParamList = {
-  TabOne: undefined;
-  TabTwo: undefined;
+  Home: undefined;
+  Search: undefined;
+  Library: undefined;
+  About: undefined;
 };
 
 export type TabOneParamList = {
-  TabOneScreen: undefined;
+  HomeScreen: undefined;
+  AlbumScreen: undefined;
 };
 
 export type TabTwoParamList = {
-  TabTwoScreen: undefined;
+  SearchScreen: undefined;
 };
+
+export type TabThreeParamList = {
+  LibraryScreen: undefined;
+}
+
+export type TabFourParamList = {
+  AboutScreen: undefined;
+}
+
+// Here we'll define standard typr of an album and we'll be able to import this type and use it wherever we'll need this type --> in order not to write again and again
+export type Album = {
+  id: string,
+  imageUri: string,
+  artistsHeadline: string,
+  name: string,
+  by: string,
+  numberOfLikes: number,
+}
+
+export type Song = {
+  id: string,
+  imageUri: string,
+  title: string,
+  artist: string,
+}
